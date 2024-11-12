@@ -1,0 +1,142 @@
+@import url('https://fonts.cdnfonts.com/css/triforce');
+
+:root{
+    --light-yellow: #e0cb9f;
+    --darker-yellow: hsl(41, 51%, 50%);
+    --transparent-yellow: rgba(224, 203, 159, .6);
+    --black-2: rgba(0, 0, 0, .8);
+    --black-1: rgba(0, 0, 0, .4);
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Triforce', sans-serif;
+    color: white;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4f8028-8b33-49d8-b888-2b19d1992fab/demn0bq-3e4ce8f0-58fb-45cb-b8bf-1f3df4fbb7ba.jpg/v1/fill/w_1192,h_670,q_70,strp/background_the_legend_of_zelda__2_by_kenji_cosplay_studio_demn0bq-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZGU0ZjgwMjgtOGIzMy00OWQ4LWI4ODgtMmIxOWQxOTkyZmFiXC9kZW1uMGJxLTNlNGNlOGYwLTU4ZmItNDVjYi1iOGJmLTFmM2RmNGZiYjdiYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ABy4dHJhQ1hwK2oMDg8ENkZqi89TmNq0ObH8AwRif0c);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    width: 80%;
+    margin:auto;
+}
+
+p, a, li{
+    margin: .5rem 0;
+}
+
+h1, h2, h3{
+    color: var(--light-yellow);
+    font-weight: bold;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 1);
+    margin: 1rem 0;
+}
+
+h1{
+    font-size: 56px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+
+h3{
+    font-size: 40px;
+}
+
+a{
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+    color: var(--light-yellow);
+    text-decoration: none;
+    font-style: italic;
+    transition: all .5s ease;
+}
+a:hover{
+    color: var(--darker-yellow);
+}
+
+.intro > header{
+    text-align: center;
+    border:10px solid var(--black-1);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 80px 0;
+    background: url(https://www.pixelstalk.net/wp-content/uploads/images2/Download-Hd-Zelda-Wallpapers-Images.jpg);
+    background-position: center;
+    transition: 1s ease;
+
+    /* Zoom-in */
+    background-size: 130%;
+
+    /* Zoom-out */
+    /* background-size: 160%; */
+} 
+
+.intro > header:hover{
+    /* Zoom-in */
+    background-size: 160%;
+
+    /* Zoom-out */
+    /* background-size: 130%; */
+}
+
+/* Tried those two with the 'cover' keyword,
+   but, sadly, the transitions don't work with
+   it. So I ended with a ugly-repeating bg in
+   smaller widths.
+*/
+
+.summary *{
+    margin: 10px 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main footer{
+    width: 100%;
+}
+
+.participation, .benefits, .requirements{
+    flex: 1 1 0;
+    background-color: var(--black-1);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all .5s ease;
+    gap: 10px;
+}
+
+.participation:hover, .benefits:hover, .requirements:hover{
+    background-color: var(--black-2);
+}
+
+#zen-supporting > footer{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.sidebar > .wrapper{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    border: 10px solid  var(--black-1);
+    padding: 10px;
+    transition: all 1s ease;
+}
+
+.sidebar > .wrapper:hover{
+    background-size: 120%;
+}
+
+.sidebar > .wrapper > *{
+    flex: 1 1 100%;
+}
